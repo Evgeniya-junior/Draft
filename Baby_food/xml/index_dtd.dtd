@@ -1,0 +1,6 @@
+﻿<!ELEMENT products(grupp)>
+<!ELEMENT grupp(var)>
+<!ELEMENT var(#PCDATA,ulist)>
+<!ELEMENT ulist(poz)>
+<!ELEMENT poz(#PCDATA)>
+<!ATTLIST grupp name CDATA #REQUIRED>
