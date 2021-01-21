@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css"></link>
+  <link rel="stylesheet" href="style.css"></link>  
+  <title>Form 4</title>
+</head>
+<body>
+  <form name="username" method="post" action="form1.html">
+    <fieldset>
+      <h1>Забрать на передержку</h1>
+      <img href="" alt="сабака">
+      <h2>Моник</h2>
+      <p>Мальчик, 7 месяцев</p>
+      <p>Оставьте информацию о себе. Мы позвоним вам и договоримся, когда вы сможете забрать себе питомца.</p>
+      <p><input type="text" name="name" placeholder="Фамилия и имя" pattent="[\D]"></p>
+      <p><input type="tel" name="telehon" placeholder="Номер телефона" pattern="[+375][0-9]([\d]{7})" required> </p>
+      <p><label for="telehon">Обязательное поле для заполнения</label></p>
+      <p><textarea name="comments" cols="500" pleceholder="Замечания"></textarea></p>
+      <div class="contacts">Если у вас есть вопросы, можете позвонить нам:<br>
+        +375 (33) 6237879  Лена<br>
+        +375 (29) 7877791  Ольга<br>
+        +375 (29) 5837015  Рита</div>
+      <p>Наши волонтеры будут активно искать будущий дом хвостику, пока вы помогаете нам с передержкой.
+          Спасибо за помощь!</p>
+      <p><button type="button" value="Отправить" form="username" formaction="form1.html">Отправить</button>
+      <button type="reset" value="Отмена" form="username">Отмена</button></p>
+
+    </fieldset>
+  </form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css"></link>
+  <link rel="stylesheet" href="style.css"></link>  
+  <title>AutoHelp</title>
+</head>
+<body>
+  <form name="username" method="post" action="#">
+    <h1>Автопомощь</h1>
+      <fieldset>
+        <h2>Заявка</h2>
+        <p>Отправьте нам заявку о том, что готовы помочь. Когда нам будет необходима помощь в транспортировке, мы позвоним вам.</p>
+        <p><input type="text" name="name" placeholder="Фамилия и имя" pattent="[\D]"></p>
+        <p><input type="tel" name="telehon" placeholder="Номер телефона" pattern="[+375][0-9]([\d]{7})" required></p>
+        <p><label for="telehon">Обязательное поле для заполнения</label></p>
+
+    <h3>Выберите удобное время, когда вы сможете нам помочь</h3>
+       <p><input type="date" id="calendar" name="calendar" value="2021-01-11">
+       <input type="time" value="time"></p>
+       <p><button type="button" value="plus" form="usermane">+</button>
+          <span>Добавить дату и время</span></p>
+
+
+       <div>
+    <p><label><input type="radio" name="yeshelp" checked>В любой будний день</label></p>
+    <p><label><input type="radio" name="no">В любой выходной день</label></p>
+   </div>
+
+   <div>
+    <h3>Выберите вид автопомощи</h3>
+    <p><label for="eda"><input type="checkbox" name="eda">Доставка еды, медикаментов и других небольших вещей</label></p>
+    <p><label for="seno"><input type="checkbox" name="seno">Доставка сена или соломы, строительных материлов 
+      для будок и других крупногабаритных вещей</label></p>
+    <p><label for="minTrance"><input type="checkbox" name="minTrance">Транспортировка небольших собак и котов</label></p>
+    <p><label for="bigTrance"><input type="checkbox" name="bigTrance">Транспортировка больших собак</label></p>
+   </div>
+
+    <p><textarea name="comments" row="5" pleceholder="Замечания"></textarea></p>
+    <p><button type="button" value="Отправить" form="username" formaction="form1.html">Оставить заявку</button>
+    <button type="reset" value="Отмена" form="username">Отмена</button></p>
+
+  </fieldset>
+</form>
+</body>
+</html>
